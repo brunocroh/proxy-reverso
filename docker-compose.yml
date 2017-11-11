@@ -1,45 +1,46 @@
 version: "3"
 services:
   tomcat1:
-    image: tomcat
+    image: tomcat:7-jre8
     container_name: tomcat1
-    ports:
-     - "8082:8080"
+    expose:
+      - "8009"
     networks:
      - production-network
     volumes:
-     - ./primefaces.war:/usr/local/tomcat/webapps/primefaces.war
+     - ./Tomcats/Tomcat1/projeto.war:/usr/local/tomcat/webapps/projeto.war
      - ./Tomcats/Tomcat1/server.xml:/usr/local/tomcat/conf/server.xml
 
   tomcat2:
-    image: tomcat
+    image: tomcat:7-jre8
     container_name: tomcat2
-    ports:
-     - "8083:8080"
+    expose:
+      - "8009"
     networks:
      - production-network
     volumes:
-     - ./primefaces.war:/usr/local/tomcat/webapps/primefaces.war
+     - ./Tomcats/Tomcat2/projeto.war:/usr/local/tomcat/webapps/projeto.war
      - ./Tomcats/Tomcat2/server.xml:/usr/local/tomcat/conf/server.xml
 
   tomcat3:
-    image: tomcat
+    image: tomcat:7-jre8
     container_name: tomcat3
-    ports:
-     - "8081:8080"
+    expose:
+      - "8009"
     networks:
      - production-network
     volumes:
-     - ./primefaces.war:/usr/local/tomcat/webapps/primefaces.war
+     - ./Tomcats/Tomcat3/projeto.war:/usr/local/tomcat/webapps/projeto.war
      - ./Tomcats/Tomcat3/server.xml:/usr/local/tomcat/conf/server.xml
 
   httpd:
-    image: httpd
     container_name: servidor
-    ports:
-      - "80:80"
     expose:
       - "80"
+    volumes:
+      - ./logs:/var/log/apache2
+    build: httpd/.
+    image: brunocroh/httpd-modjk
     networks:
       - production-network
     depends_on: 
