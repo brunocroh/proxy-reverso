@@ -1,53 +1,23 @@
-version: "3"
+version: '3'
 services:
-  tomcat1:
-    image: tomcat:7-jre8
-    container_name: tomcat1
+  web1:
+    container_name: web1
     expose:
       - "8009"
-    networks:
-     - production-network
-    volumes:
-     - ./Tomcats/Tomcat1/projeto.war:/usr/local/tomcat/webapps/projeto.war
-     - ./Tomcats/Tomcat1/server.xml:/usr/local/tomcat/conf/server.xml
-
-  tomcat2:
-    image: tomcat:7-jre8
-    container_name: tomcat2
+    build: tomcat1/.
+  web2:
+    container_name: web2
     expose:
       - "8009"
-    networks:
-     - production-network
-    volumes:
-     - ./Tomcats/Tomcat2/projeto.war:/usr/local/tomcat/webapps/projeto.war
-     - ./Tomcats/Tomcat2/server.xml:/usr/local/tomcat/conf/server.xml
-
-  tomcat3:
-    image: tomcat:7-jre8
-    container_name: tomcat3
+    build: tomcat2/.
+  web3:
+    container_name: web3
     expose:
       - "8009"
-    networks:
-     - production-network
-    volumes:
-     - ./Tomcats/Tomcat3/projeto.war:/usr/local/tomcat/webapps/projeto.war
-     - ./Tomcats/Tomcat3/server.xml:/usr/local/tomcat/conf/server.xml
-
+    build: tomcat3/.
   httpd:
-    container_name: servidor
-    expose:
-      - "80"
     volumes:
       - ./logs:/var/log/apache2
+    ports:
+      - 80
     build: httpd/.
-    image: brunocroh/httpd-modjk
-    networks:
-      - production-network
-    depends_on: 
-      - "tomcat1"
-      - "tomcat2"
-      - "tomcat3"
-
-networks:
-  production-network:
-    driver: bridge

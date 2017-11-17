@@ -1,9 +1,8 @@
 FROM ubuntu:latest
 
-MAINTAINER brunocroh@gmail.com
+MAINTAINER kakapari@gmail.com
 
 RUN apt-get update && apt-get install -y --no-install-recommends apache2 libapache2-mod-jk
-RUN a2enmod jk
 
 ADD apache2.conf /etc/apache2/apache2.conf
 
