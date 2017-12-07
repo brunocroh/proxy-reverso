@@ -1,0 +1,27 @@
+[Fri Nov 17 21:30:53.525591 2017] [jk:warn] [pid 8:tid 140009149114240] No JkLogFile defined in httpd.conf. Using default /var/log/apache2/mod_jk.log
+[Fri Nov 17 21:30:53.525816 2017] [jk:warn] [pid 8:tid 140009149114240] No JkLogFile defined in httpd.conf. Using default /var/log/apache2/mod_jk.log
+[Fri Nov 17 21:30:53.525986 2017] [jk:warn] [pid 8:tid 140009149114240] No JkShmFile defined in httpd.conf. Using default /var/log/apache2/jk-runtime-status
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.19.0.4. Set the 'ServerName' directive globally to suppress this message
+[Fri Nov 17 21:30:53.537142 2017] [jk:warn] [pid 8:tid 140009149114240] No JkLogFile defined in httpd.conf. Using default /var/log/apache2/mod_jk.log
+[Fri Nov 17 21:30:53.537214 2017] [jk:warn] [pid 8:tid 140009149114240] No JkLogFile defined in httpd.conf. Using default /var/log/apache2/mod_jk.log
+[Fri Nov 17 21:30:53.537326 2017] [jk:warn] [pid 8:tid 140009149114240] No JkShmFile defined in httpd.conf. Using default /var/log/apache2/jk-runtime-status
+[Fri Nov 17 21:30:53.541934 2017] [mpm_event:notice] [pid 8:tid 140009149114240] AH00489: Apache/2.4.18 (Ubuntu) mod_jk/1.2.41 configured -- resuming normal operations
+[Fri Nov 17 21:30:53.541983 2017] [core:notice] [pid 8:tid 140009149114240] AH00094: Command line: '/usr/sbin/apache2 -D FOREGROUND'
+[Fri Nov 17 23:57:58.918999 2017] [jk:warn] [pid 8:tid 139987033495424] No JkLogFile defined in httpd.conf. Using default /var/log/apache2/mod_jk.log
+[Fri Nov 17 23:57:59.080886 2017] [jk:warn] [pid 8:tid 139987033495424] No JkLogFile defined in httpd.conf. Using default /var/log/apache2/mod_jk.log
+[Fri Nov 17 23:57:59.088866 2017] [jk:warn] [pid 8:tid 139987033495424] No JkShmFile defined in httpd.conf. Using default /var/log/apache2/jk-runtime-status
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 10.0.1.10. Set the 'ServerName' directive globally to suppress this message
+[Fri Nov 17 23:57:59.734883 2017] [jk:warn] [pid 8:tid 139987033495424] No JkLogFile defined in httpd.conf. Using default /var/log/apache2/mod_jk.log
+[Fri Nov 17 23:57:59.734902 2017] [jk:warn] [pid 8:tid 139987033495424] No JkLogFile defined in httpd.conf. Using default /var/log/apache2/mod_jk.log
+[Fri Nov 17 23:57:59.734955 2017] [jk:warn] [pid 8:tid 139987033495424] No JkShmFile defined in httpd.conf. Using default /var/log/apache2/jk-runtime-status
+[Fri Nov 17 23:57:59.741095 2017] [mpm_event:notice] [pid 8:tid 139987033495424] AH00489: Apache/2.4.18 (Ubuntu) mod_jk/1.2.41 configured -- resuming normal operations
+[Fri Nov 17 23:57:59.741123 2017] [core:notice] [pid 8:tid 139987033495424] AH00094: Command line: '/usr/sbin/apache2 -D FOREGROUND'
+[Fri Nov 24 21:41:12.286409 2017] [jk:warn] [pid 8:tid 140078944106368] No JkLogFile defined in httpd.conf. Using default /var/log/apache2/mod_jk.log
+[Fri Nov 24 21:41:12.336868 2017] [jk:warn] [pid 8:tid 140078944106368] No JkLogFile defined in httpd.conf. Using default /var/log/apache2/mod_jk.log
+[Fri Nov 24 21:41:12.337592 2017] [jk:warn] [pid 8:tid 140078944106368] No JkShmFile defined in httpd.conf. Using default /var/log/apache2/jk-runtime-status
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 10.0.0.20. Set the 'ServerName' directive globally to suppress this message
+[Fri Nov 24 21:41:12.435075 2017] [jk:warn] [pid 8:tid 140078944106368] No JkLogFile defined in httpd.conf. Using default /var/log/apache2/mod_jk.log
+[Fri Nov 24 21:41:12.435145 2017] [jk:warn] [pid 8:tid 140078944106368] No JkLogFile defined in httpd.conf. Using default /var/log/apache2/mod_jk.log
+[Fri Nov 24 21:41:12.435324 2017] [jk:warn] [pid 8:tid 140078944106368] No JkShmFile defined in httpd.conf. Using default /var/log/apache2/jk-runtime-status
+[Fri Nov 24 21:41:12.488082 2017] [mpm_event:notice] [pid 8:tid 140078944106368] AH00489: Apache/2.4.18 (Ubuntu) mod_jk/1.2.41 configured -- resuming normal operations
+[Fri Nov 24 21:41:12.488173 2017] [core:notice] [pid 8:tid 140078944106368] AH00094: Command line: '/usr/sbin/apache2 -D FOREGROUND'

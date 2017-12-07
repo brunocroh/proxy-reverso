@@ -1,0 +1,132 @@
+[Fri Nov 17 21:30:53.528 2017] [8:140009149114240] [info] init_jk::mod_jk.c (3591): mod_jk/1.2.41 initialized
+[Fri Nov 17 21:30:53.539 2017] [8:140009149114240] [info] init_jk::mod_jk.c (3591): mod_jk/1.2.41 initialized
+[Fri Nov 17 21:31:36.469 2017] loadbalancer localhost 1.163423
+[Fri Nov 17 21:31:40.325 2017] loadbalancer localhost 0.057355
+[Fri Nov 17 21:31:40.939 2017] loadbalancer localhost 0.609452
+[Fri Nov 17 21:31:42.385 2017] loadbalancer localhost 0.156913
+[Fri Nov 17 21:31:43.614 2017] loadbalancer localhost 0.664822
+[Fri Nov 17 21:31:43.766 2017] loadbalancer localhost 0.003176
+[Fri Nov 17 21:32:37.929 2017] loadbalancer localhost 0.008164
+[Fri Nov 17 21:32:47.819 2017] loadbalancer localhost 0.012981
+[Fri Nov 17 21:32:48.865 2017] loadbalancer localhost 0.007796
+[Fri Nov 17 21:32:49.629 2017] loadbalancer localhost 0.006405
+[Fri Nov 17 21:32:50.281 2017] loadbalancer localhost 0.007015
+[Fri Nov 17 21:32:50.932 2017] loadbalancer localhost 0.004079
+[Fri Nov 17 21:33:01.523 2017] loadbalancer localhost 0.005050
+[Fri Nov 17 21:33:06.174 2017] loadbalancer localhost 0.002703
+[Fri Nov 17 21:33:06.930 2017] loadbalancer localhost 0.007132
+[Fri Nov 17 21:33:08.620 2017] loadbalancer localhost 0.002523
+[Fri Nov 17 21:33:09.572 2017] loadbalancer localhost 0.004368
+[Fri Nov 17 21:33:11.390 2017] loadbalancer localhost 0.002387
+[Fri Nov 17 21:33:12.506 2017] loadbalancer localhost 0.007086
+[Fri Nov 17 21:33:26.022 2017] [9:140008786671360] [info] jk_open_socket::jk_connect.c (817): connect to 172.19.0.2:8009 failed (errno=113)
+[Fri Nov 17 21:33:26.022 2017] [10:140008887383808] [info] jk_open_socket::jk_connect.c (817): connect to 172.19.0.2:8009 failed (errno=113)
+[Fri Nov 17 21:33:26.022 2017] [9:140008786671360] [info] ajp_connect_to_endpoint::jk_ajp_common.c (1068): (web_1) Failed opening socket to (172.19.0.2:8009) (errno=113)
+[Fri Nov 17 21:33:26.022 2017] [9:140008786671360] [error] ajp_send_request::jk_ajp_common.c (1728): (web_1) connecting to backend failed. Tomcat is probably not started or is listening on the wrong port (errno=113)
+[Fri Nov 17 21:33:26.022 2017] [10:140008887383808] [info] ajp_connect_to_endpoint::jk_ajp_common.c (1068): (web_1) Failed opening socket to (172.19.0.2:8009) (errno=113)
+[Fri Nov 17 21:33:26.023 2017] [9:140008786671360] [info] ajp_service::jk_ajp_common.c (2773): (web_1) sending request to tomcat failed (recoverable), because of error during request sending (attempt=1)
+[Fri Nov 17 21:33:26.023 2017] [10:140008887383808] [error] ajp_send_request::jk_ajp_common.c (1728): (web_1) connecting to backend failed. Tomcat is probably not started or is listening on the wrong port (errno=113)
+[Fri Nov 17 21:33:26.022 2017] [10:140008937740032] [info] jk_open_socket::jk_connect.c (817): connect to 172.19.0.2:8009 failed (errno=113)
+[Fri Nov 17 21:33:26.023 2017] [10:140008887383808] [info] ajp_service::jk_ajp_common.c (2773): (web_1) sending request to tomcat failed (recoverable), because of error during request sending (attempt=1)
+[Fri Nov 17 21:33:26.023 2017] [10:140008937740032] [info] ajp_connect_to_endpoint::jk_ajp_common.c (1068): (web_1) Failed opening socket to (172.19.0.2:8009) (errno=113)
+[Fri Nov 17 21:33:26.023 2017] [10:140008937740032] [error] ajp_send_request::jk_ajp_common.c (1728): (web_1) connecting to backend failed. Tomcat is probably not started or is listening on the wrong port (errno=113)
+[Fri Nov 17 21:33:26.023 2017] [10:140008937740032] [info] ajp_service::jk_ajp_common.c (2773): (web_1) sending request to tomcat failed (recoverable), because of error during request sending (attempt=1)
+[Fri Nov 17 21:33:29.169 2017] [10:140008887383808] [info] jk_open_socket::jk_connect.c (817): connect to 172.19.0.2:8009 failed (errno=113)
+[Fri Nov 17 21:33:29.169 2017] [9:140008786671360] [info] jk_open_socket::jk_connect.c (817): connect to 172.19.0.2:8009 failed (errno=113)
+[Fri Nov 17 21:33:29.169 2017] [10:140008937740032] [info] jk_open_socket::jk_connect.c (817): connect to 172.19.0.2:8009 failed (errno=113)
+[Fri Nov 17 21:33:29.169 2017] [9:140008786671360] [info] ajp_connect_to_endpoint::jk_ajp_common.c (1068): (web_1) Failed opening socket to (172.19.0.2:8009) (errno=113)
+[Fri Nov 17 21:33:29.169 2017] [10:140008887383808] [info] ajp_connect_to_endpoint::jk_ajp_common.c (1068): (web_1) Failed opening socket to (172.19.0.2:8009) (errno=113)
+[Fri Nov 17 21:33:29.169 2017] [9:140008786671360] [error] ajp_send_request::jk_ajp_common.c (1728): (web_1) connecting to backend failed. Tomcat is probably not started or is listening on the wrong port (errno=113)
+[Fri Nov 17 21:33:29.169 2017] [9:140008786671360] [info] ajp_service::jk_ajp_common.c (2773): (web_1) sending request to tomcat failed (recoverable), because of error during request sending (attempt=2)
+[Fri Nov 17 21:33:29.169 2017] [10:140008937740032] [info] ajp_connect_to_endpoint::jk_ajp_common.c (1068): (web_1) Failed opening socket to (172.19.0.2:8009) (errno=113)
+[Fri Nov 17 21:33:29.170 2017] [9:140008786671360] [error] ajp_service::jk_ajp_common.c (2794): (web_1) connecting to tomcat failed (rc=-3, errors=1, client_errors=0).
+[Fri Nov 17 21:33:29.169 2017] [10:140008887383808] [error] ajp_send_request::jk_ajp_common.c (1728): (web_1) connecting to backend failed. Tomcat is probably not started or is listening on the wrong port (errno=113)
+[Fri Nov 17 21:33:29.170 2017] [9:140008786671360] [info] service::jk_lb_worker.c (1595): service failed, worker web_1 is in local error state
+[Fri Nov 17 21:33:29.170 2017] [10:140008937740032] [error] ajp_send_request::jk_ajp_common.c (1728): (web_1) connecting to backend failed. Tomcat is probably not started or is listening on the wrong port (errno=113)
+[Fri Nov 17 21:33:29.170 2017] [10:140008887383808] [info] ajp_service::jk_ajp_common.c (2773): (web_1) sending request to tomcat failed (recoverable), because of error during request sending (attempt=2)
+[Fri Nov 17 21:33:29.170 2017] [10:140008937740032] [info] ajp_service::jk_ajp_common.c (2773): (web_1) sending request to tomcat failed (recoverable), because of error during request sending (attempt=2)
+[Fri Nov 17 21:33:29.170 2017] [10:140008887383808] [error] ajp_service::jk_ajp_common.c (2794): (web_1) connecting to tomcat failed (rc=-3, errors=2, client_errors=0).
+[Fri Nov 17 21:33:29.170 2017] [10:140008937740032] [error] ajp_service::jk_ajp_common.c (2794): (web_1) connecting to tomcat failed (rc=-3, errors=3, client_errors=0).
+[Fri Nov 17 21:33:29.170 2017] [10:140008937740032] [info] service::jk_lb_worker.c (1595): service failed, worker web_1 is in local error state
+[Fri Nov 17 21:33:29.170 2017] [10:140008887383808] [info] service::jk_lb_worker.c (1595): service failed, worker web_1 is in local error state
+[Fri Nov 17 21:33:29.175 2017] loadbalancer localhost 18.817715
+[Fri Nov 17 21:33:29.175 2017] loadbalancer localhost 21.453820
+[Fri Nov 17 21:33:29.183 2017] loadbalancer localhost 13.043777
+[Fri Nov 17 21:33:38.396 2017] [9:140008795064064] [info] jk_open_socket::jk_connect.c (817): connect to 172.19.0.2:8009 failed (errno=113)
+[Fri Nov 17 21:33:38.396 2017] [9:140008795064064] [info] ajp_connect_to_endpoint::jk_ajp_common.c (1068): (web_1) Failed opening socket to (172.19.0.2:8009) (errno=113)
+[Fri Nov 17 21:33:38.396 2017] [9:140008795064064] [error] ajp_send_request::jk_ajp_common.c (1728): (web_1) connecting to backend failed. Tomcat is probably not started or is listening on the wrong port (errno=113)
+[Fri Nov 17 21:33:38.396 2017] [9:140008795064064] [info] ajp_service::jk_ajp_common.c (2773): (web_1) sending request to tomcat failed (recoverable), because of error during request sending (attempt=1)
+[Fri Nov 17 21:33:41.542 2017] [9:140008795064064] [info] jk_open_socket::jk_connect.c (817): connect to 172.19.0.2:8009 failed (errno=113)
+[Fri Nov 17 21:33:41.542 2017] [9:140008795064064] [info] ajp_connect_to_endpoint::jk_ajp_common.c (1068): (web_1) Failed opening socket to (172.19.0.2:8009) (errno=113)
+[Fri Nov 17 21:33:41.542 2017] [9:140008795064064] [error] ajp_send_request::jk_ajp_common.c (1728): (web_1) connecting to backend failed. Tomcat is probably not started or is listening on the wrong port (errno=113)
+[Fri Nov 17 21:33:41.543 2017] [9:140008795064064] [info] ajp_service::jk_ajp_common.c (2773): (web_1) sending request to tomcat failed (recoverable), because of error during request sending (attempt=2)
+[Fri Nov 17 21:33:41.543 2017] [9:140008795064064] [error] ajp_service::jk_ajp_common.c (2794): (web_1) connecting to tomcat failed (rc=-3, errors=4, client_errors=0).
+[Fri Nov 17 21:33:41.543 2017] [9:140008795064064] [info] service::jk_lb_worker.c (1595): service failed, worker web_1 is in error state
+[Fri Nov 17 21:33:41.552 2017] loadbalancer localhost 39.171808
+[Fri Nov 17 21:34:13.713 2017] loadbalancer localhost 0.005078
+[Fri Nov 17 21:34:18.369 2017] [9:140008862205696] [info] jk_open_socket::jk_connect.c (817): connect to 172.19.0.3:8009 failed (errno=113)
+[Fri Nov 17 21:34:18.369 2017] [9:140008862205696] [info] ajp_connect_to_endpoint::jk_ajp_common.c (1068): (web_2) Failed opening socket to (172.19.0.3:8009) (errno=113)
+[Fri Nov 17 21:34:18.369 2017] [9:140008862205696] [error] ajp_send_request::jk_ajp_common.c (1728): (web_2) connecting to backend failed. Tomcat is probably not started or is listening on the wrong port (errno=113)
+[Fri Nov 17 21:34:18.369 2017] [9:140008862205696] [info] ajp_service::jk_ajp_common.c (2773): (web_2) sending request to tomcat failed (recoverable), because of error during request sending (attempt=1)
+[Fri Nov 17 21:34:20.992 2017] loadbalancer localhost 0.002994
+[Fri Nov 17 21:34:21.409 2017] [9:140008862205696] [info] jk_open_socket::jk_connect.c (817): connect to 172.19.0.3:8009 failed (errno=113)
+[Fri Nov 17 21:34:21.409 2017] [10:140008946132736] [info] jk_open_socket::jk_connect.c (817): connect to 172.19.0.3:8009 failed (errno=113)
+[Fri Nov 17 21:34:21.409 2017] [9:140008862205696] [info] ajp_connect_to_endpoint::jk_ajp_common.c (1068): (web_2) Failed opening socket to (172.19.0.3:8009) (errno=113)
+[Fri Nov 17 21:34:21.409 2017] [9:140008862205696] [error] ajp_send_request::jk_ajp_common.c (1728): (web_2) connecting to backend failed. Tomcat is probably not started or is listening on the wrong port (errno=113)
+[Fri Nov 17 21:34:21.409 2017] [10:140008946132736] [info] ajp_connect_to_endpoint::jk_ajp_common.c (1068): (web_2) Failed opening socket to (172.19.0.3:8009) (errno=113)
+[Fri Nov 17 21:34:21.409 2017] [9:140008862205696] [info] ajp_service::jk_ajp_common.c (2773): (web_2) sending request to tomcat failed (recoverable), because of error during request sending (attempt=2)
+[Fri Nov 17 21:34:21.409 2017] [10:140008946132736] [error] ajp_send_request::jk_ajp_common.c (1728): (web_2) connecting to backend failed. Tomcat is probably not started or is listening on the wrong port (errno=113)
+[Fri Nov 17 21:34:21.409 2017] [9:140008862205696] [error] ajp_service::jk_ajp_common.c (2794): (web_2) connecting to tomcat failed (rc=-3, errors=1, client_errors=0).
+[Fri Nov 17 21:34:21.409 2017] [10:140008946132736] [info] ajp_service::jk_ajp_common.c (2773): (web_2) sending request to tomcat failed (recoverable), because of error during request sending (attempt=1)
+[Fri Nov 17 21:34:21.409 2017] [9:140008862205696] [info] service::jk_lb_worker.c (1595): service failed, worker web_2 is in local error state
+[Fri Nov 17 21:34:21.411 2017] loadbalancer localhost 6.913609
+[Fri Nov 17 21:34:24.118 2017] loadbalancer localhost 0.003214
+[Fri Nov 17 21:34:24.449 2017] [9:140008878991104] [info] jk_open_socket::jk_connect.c (817): connect to 172.19.0.3:8009 failed (errno=113)
+[Fri Nov 17 21:34:24.449 2017] [9:140008878991104] [info] ajp_connect_to_endpoint::jk_ajp_common.c (1068): (web_2) Failed opening socket to (172.19.0.3:8009) (errno=113)
+[Fri Nov 17 21:34:24.449 2017] [9:140008878991104] [error] ajp_send_request::jk_ajp_common.c (1728): (web_2) connecting to backend failed. Tomcat is probably not started or is listening on the wrong port (errno=113)
+[Fri Nov 17 21:34:24.449 2017] [9:140008878991104] [info] ajp_service::jk_ajp_common.c (2773): (web_2) sending request to tomcat failed (recoverable), because of error during request sending (attempt=1)
+[Fri Nov 17 21:34:24.449 2017] [10:140008946132736] [info] jk_open_socket::jk_connect.c (817): connect to 172.19.0.3:8009 failed (errno=113)
+[Fri Nov 17 21:34:24.449 2017] [10:140008946132736] [info] ajp_connect_to_endpoint::jk_ajp_common.c (1068): (web_2) Failed opening socket to (172.19.0.3:8009) (errno=113)
+[Fri Nov 17 21:34:24.449 2017] [10:140008946132736] [error] ajp_send_request::jk_ajp_common.c (1728): (web_2) connecting to backend failed. Tomcat is probably not started or is listening on the wrong port (errno=113)
+[Fri Nov 17 21:34:24.449 2017] [10:140008946132736] [info] ajp_service::jk_ajp_common.c (2773): (web_2) sending request to tomcat failed (recoverable), because of error during request sending (attempt=2)
+[Fri Nov 17 21:34:24.449 2017] [10:140008946132736] [error] ajp_service::jk_ajp_common.c (2794): (web_2) connecting to tomcat failed (rc=-3, errors=2, client_errors=0).
+[Fri Nov 17 21:34:24.449 2017] [10:140008946132736] [info] service::jk_lb_worker.c (1595): service failed, worker web_2 is in local error state
+[Fri Nov 17 21:34:24.450 2017] loadbalancer localhost 12.863774
+[Fri Nov 17 21:34:26.556 2017] loadbalancer localhost 0.006316
+[Fri Nov 17 21:34:27.489 2017] [9:140009060534016] [info] jk_open_socket::jk_connect.c (817): connect to 172.19.0.3:8009 failed (errno=113)
+[Fri Nov 17 21:34:27.489 2017] [9:140008878991104] [info] jk_open_socket::jk_connect.c (817): connect to 172.19.0.3:8009 failed (errno=113)
+[Fri Nov 17 21:34:27.489 2017] [9:140009060534016] [info] ajp_connect_to_endpoint::jk_ajp_common.c (1068): (web_2) Failed opening socket to (172.19.0.3:8009) (errno=113)
+[Fri Nov 17 21:34:27.489 2017] [9:140009060534016] [error] ajp_send_request::jk_ajp_common.c (1728): (web_2) connecting to backend failed. Tomcat is probably not started or is listening on the wrong port (errno=113)
+[Fri Nov 17 21:34:27.489 2017] [9:140008878991104] [info] ajp_connect_to_endpoint::jk_ajp_common.c (1068): (web_2) Failed opening socket to (172.19.0.3:8009) (errno=113)
+[Fri Nov 17 21:34:27.489 2017] [9:140009060534016] [info] ajp_service::jk_ajp_common.c (2773): (web_2) sending request to tomcat failed (recoverable), because of error during request sending (attempt=1)
+[Fri Nov 17 21:34:27.489 2017] [9:140008837027584] [info] jk_open_socket::jk_connect.c (817): connect to 172.19.0.3:8009 failed (errno=113)
+[Fri Nov 17 21:34:27.489 2017] [9:140008878991104] [error] ajp_send_request::jk_ajp_common.c (1728): (web_2) connecting to backend failed. Tomcat is probably not started or is listening on the wrong port (errno=113)
+[Fri Nov 17 21:34:27.490 2017] [9:140008878991104] [info] ajp_service::jk_ajp_common.c (2773): (web_2) sending request to tomcat failed (recoverable), because of error during request sending (attempt=2)
+[Fri Nov 17 21:34:27.490 2017] [9:140008878991104] [error] ajp_service::jk_ajp_common.c (2794): (web_2) connecting to tomcat failed (rc=-3, errors=3, client_errors=0).
+[Fri Nov 17 21:34:27.490 2017] [9:140008837027584] [info] ajp_connect_to_endpoint::jk_ajp_common.c (1068): (web_2) Failed opening socket to (172.19.0.3:8009) (errno=113)
+[Fri Nov 17 21:34:27.490 2017] [9:140008878991104] [info] service::jk_lb_worker.c (1595): service failed, worker web_2 is in local error state
+[Fri Nov 17 21:34:27.490 2017] [9:140008837027584] [error] ajp_send_request::jk_ajp_common.c (1728): (web_2) connecting to backend failed. Tomcat is probably not started or is listening on the wrong port (errno=113)
+[Fri Nov 17 21:34:27.490 2017] [9:140008837027584] [info] ajp_service::jk_ajp_common.c (2773): (web_2) sending request to tomcat failed (recoverable), because of error during request sending (attempt=1)
+[Fri Nov 17 21:34:27.494 2017] loadbalancer localhost 5.411611
+[Fri Nov 17 21:34:30.529 2017] [9:140009060534016] [info] jk_open_socket::jk_connect.c (817): connect to 172.19.0.3:8009 failed (errno=113)
+[Fri Nov 17 21:34:30.529 2017] [9:140009060534016] [info] ajp_connect_to_endpoint::jk_ajp_common.c (1068): (web_2) Failed opening socket to (172.19.0.3:8009) (errno=113)
+[Fri Nov 17 21:34:30.529 2017] [9:140008837027584] [info] jk_open_socket::jk_connect.c (817): connect to 172.19.0.3:8009 failed (errno=113)
+[Fri Nov 17 21:34:30.529 2017] [9:140009060534016] [error] ajp_send_request::jk_ajp_common.c (1728): (web_2) connecting to backend failed. Tomcat is probably not started or is listening on the wrong port (errno=113)
+[Fri Nov 17 21:34:30.529 2017] [9:140009060534016] [info] ajp_service::jk_ajp_common.c (2773): (web_2) sending request to tomcat failed (recoverable), because of error during request sending (attempt=2)
+[Fri Nov 17 21:34:30.529 2017] [9:140009060534016] [error] ajp_service::jk_ajp_common.c (2794): (web_2) connecting to tomcat failed (rc=-3, errors=4, client_errors=0).
+[Fri Nov 17 21:34:30.529 2017] [9:140008837027584] [info] ajp_connect_to_endpoint::jk_ajp_common.c (1068): (web_2) Failed opening socket to (172.19.0.3:8009) (errno=113)
+[Fri Nov 17 21:34:30.530 2017] [9:140008837027584] [error] ajp_send_request::jk_ajp_common.c (1728): (web_2) connecting to backend failed. Tomcat is probably not started or is listening on the wrong port (errno=113)
+[Fri Nov 17 21:34:30.530 2017] [9:140008837027584] [info] ajp_service::jk_ajp_common.c (2773): (web_2) sending request to tomcat failed (recoverable), because of error during request sending (attempt=2)
+[Fri Nov 17 21:34:30.530 2017] [9:140008837027584] [error] ajp_service::jk_ajp_common.c (2794): (web_2) connecting to tomcat failed (rc=-3, errors=5, client_errors=0).
+[Fri Nov 17 21:34:30.530 2017] [9:140009060534016] [info] service::jk_lb_worker.c (1595): service failed, worker web_2 is in local error state
+[Fri Nov 17 21:34:30.530 2017] [9:140008837027584] [info] service::jk_lb_worker.c (1595): service failed, worker web_2 is in error state
+[Fri Nov 17 21:34:30.534 2017] loadbalancer localhost 4.557229
+[Fri Nov 17 21:34:30.535 2017] loadbalancer localhost 5.785801
+[Fri Nov 17 23:57:59.303 2017] [8:139987033495424] [error] ajp_validate::jk_ajp_common.c (2867): worker web_1 can't resolve tomcat address web1
+[Fri Nov 17 23:57:59.640 2017] [8:139987033495424] [error] ajp_validate::jk_ajp_common.c (2867): worker web_3 can't resolve tomcat address web3
+[Fri Nov 17 23:57:59.641 2017] [8:139987033495424] [info] init_jk::mod_jk.c (3591): mod_jk/1.2.41 initialized
+[Fri Nov 17 23:57:59.737 2017] [8:139987033495424] [error] ajp_validate::jk_ajp_common.c (2867): worker web_1 can't resolve tomcat address web1
+[Fri Nov 17 23:57:59.739 2017] [8:139987033495424] [error] ajp_validate::jk_ajp_common.c (2867): worker web_3 can't resolve tomcat address web3
+[Fri Nov 17 23:57:59.739 2017] [8:139987033495424] [info] init_jk::mod_jk.c (3591): mod_jk/1.2.41 initialized
+[Fri Nov 24 21:41:12.369 2017] [8:140078944106368] [info] init_jk::mod_jk.c (3591): mod_jk/1.2.41 initialized
+[Fri Nov 24 21:41:12.439 2017] [8:140078944106368] [info] init_jk::mod_jk.c (3591): mod_jk/1.2.41 initialized

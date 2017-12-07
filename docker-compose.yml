@@ -2,18 +2,12 @@ version: '3'
 services:
   web1:
     container_name: web1
-    expose:
-      - "8009"
     build: tomcat1/.
   web2:
     container_name: web2
-    expose:
-      - "8009"
     build: tomcat2/.
   web3:
     container_name: web3
-    expose:
-      - "8009"
     build: tomcat3/.
   httpd:
     volumes:

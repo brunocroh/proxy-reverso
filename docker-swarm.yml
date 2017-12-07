@@ -1,0 +1,14 @@
+version: '3'
+services:
+  web1:
+    image: brunoroh/proxy-reverso 
+    deploy:
+      replicas: 2
+      placement:
+        constraints: [node.role == worker]
+  httpd:
+    image: proxyreverso_httpd
+    volumes:
+      - ./logs:/var/log/apache2
+    ports:
+      - 80
